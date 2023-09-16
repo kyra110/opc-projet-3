@@ -33,6 +33,7 @@ header {
 .header__menu__link {
   margin-left: 25px;
   padding-top: 10px;
+  border-top: 2px solid transparent;
 }
 .header__menu__link:hover {
   color: var(--main-color);
@@ -46,13 +47,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-.info-group__head h2 {
+.info-group__head h1 {
   font-size: 22px;
   font-weight: 700;
 }
 .info-group__head p {
   padding-top: 10px;
-  margin: 0;
 }
 .info-group__form {
   width: 377px;
@@ -114,6 +114,10 @@ header {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
+}
+.filter-bar__containerButtons {
+  display: flex;
+  gap: 15px;
 }
 .filter-bar button {
   width: 173px;
@@ -345,17 +349,20 @@ footer {
   background-color: var(--main-bg-color);
 }
 footer article {
+  display: flex;
   padding: 10px;
-}
-footer article h3,
-p {
-  margin: 10px;
+  gap: 10px;
+  flex-direction: column;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-
+@media screen and (max-width: 1108px) {
+  .card-title {
+    font-size: 14px;
+  }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
   /*info-group*/
@@ -403,7 +410,7 @@ p {
   }
   .activites__pictures__card span {
     height: 20%;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -427,6 +434,7 @@ p {
   }
   .header__menu__link {
     margin: 0;
+    border-top: none;
     border-bottom: 2px solid #d9d9d9;
   }
   .header__menu__link:hover {
