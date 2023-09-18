@@ -99,7 +99,7 @@ header {
   padding: 10px;
 }
 /* classe pour la loupe du form en version mobile*/
-.--phone {
+.phone {
   border-radius: 15px;
   width: 15%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
