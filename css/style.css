@@ -492,13 +492,37 @@ footer article {
     background-color: transparent;
   }
   .hebergements-cards {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
   }
   .hebergements-cards .card {
     margin-bottom: 15px;
   }
   p h3 {
     margin: 0;
+  }
+  /*ordre img hebergement à Marseille*/
+  .hebergements-cards > a:nth-child(1) {
+    order: 1;
+  }
+
+  .hebergements-cards > a:nth-child(2) {
+    order: 6;
+  }
+
+  .hebergements-cards > a:nth-child(3) {
+    order: 3;
+  }
+
+  .hebergements-cards > a:nth-child(4) {
+    order: 4;
+  }
+
+  .hebergements-cards > a:nth-child(5) {
+    order: 2;
+  }
+
+  .hebergements-cards > a:nth-child(6) {
+    order: 5;
   }
 
   /*responsive bloc activites*/
