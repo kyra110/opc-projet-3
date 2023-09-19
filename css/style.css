@@ -3,6 +3,10 @@
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
 
 :root {
   --main-color: #0065fc;
@@ -168,11 +172,6 @@ header {
 .fa-location-dot {
   color: black;
 }
-body {
-  display: flex;
-  justify-content: center;
-}
-
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -256,7 +255,9 @@ a {
 .hebergements-cards .card-rating {
   margin: 5px 0 5px 0;
 }
-
+.hebergements__titleAfficherPlus {
+  margin-top: 33px;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
