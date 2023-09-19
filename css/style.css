@@ -540,7 +540,9 @@ footer article {
   .hebergements-cards > a:nth-child(6) {
     order: 5;
   }
-
+  .hebergements__titleAfficherPlus {
+    margin-top: 0px;
+  }
   /*responsive bloc activites*/
 
   .activites__pictures {
