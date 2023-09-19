@@ -41,14 +41,15 @@ header {
 }
 /**********section info-group*****************/
 .info-group {
-  margin-bottom: 33px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   gap: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .info-group__head h1 {
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 .info-group__head p {
@@ -71,7 +72,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-  width: 50px;
+  width: 20%;
   height: 49px;
   border-radius: 15px 0 0 15px;
 }
@@ -79,10 +80,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 21px;
+  text-align: center;
+  width: 70%;
+  height: 100%;
   border: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 .info-group__form__input::placeholder {
@@ -92,7 +94,7 @@ header {
   border: none;
   background-color: var(--main-color);
   color: white;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
   height: 49px;
   border-radius: 0px 15px 15px 0;
@@ -112,7 +114,7 @@ header {
 }
 .filter-bar h2 {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 .filter-bar__containerButtons {
@@ -125,7 +127,7 @@ header {
   border-radius: 25px;
   background-color: white;
   border: 2px solid #d9d9d9;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
   font-family: "Raleway";
   cursor: pointer;
@@ -151,11 +153,11 @@ header {
   height: 24px;
   border-radius: 50px;
   border: 1px solid #d9d9d9;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: bolder;
 }
 .info-bar__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 90%;
 }
@@ -185,7 +187,7 @@ a {
 
 .section-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 .card {
@@ -200,7 +202,7 @@ a {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .euro {
@@ -338,7 +340,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin-left: 15px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   height: 15%;
 }
@@ -350,7 +352,7 @@ footer {
 }
 footer article {
   display: flex;
-  padding: 10px;
+  padding: 25px;
   gap: 10px;
   flex-direction: column;
 }
@@ -360,7 +362,7 @@ footer article {
 /****** Media queries ***********/
 @media screen and (max-width: 1108px) {
   .card-title {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -383,7 +385,13 @@ footer article {
     width: 100%;
     margin-top: 50px;
   }
-
+  /*Modif du titre Auberge la canebière */
+  .card-title-none {
+    display: none;
+  }
+  .card-title-modif::after {
+    content: "Hotel Le soleil du matin";
+  }
   .populaires-cards {
     display: flex;
     flex-direction: row;
@@ -395,11 +403,11 @@ footer article {
   }
 
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
   /*responsive bloc activites*/
   .activites__pictures__card {
@@ -410,7 +418,7 @@ footer article {
   }
   .activites__pictures__card span {
     height: 20%;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 
@@ -425,6 +433,9 @@ footer article {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+  }
+  .header__container__logo {
+    padding: 10px 0 20px;
   }
   .header__menu {
     width: 100%;
@@ -444,7 +455,6 @@ footer article {
   }
   /*info-group*/
   .info-group {
-    margin-top: 30px;
     padding: 0 15px;
   }
   .info-group__form {
@@ -455,23 +465,24 @@ footer article {
   }
   #form__button__phone {
     display: block;
+    width: 15%;
+  }
+  .info-group__form__icon-gps {
+    width: 15%;
   }
   .info-group__form__input {
-    width: 50%;
-    font-size: 18px;
-  }
-  .info-group__head h2 {
-    font-size: 25px;
+    font-size: 1.1rem;
   }
   .filter-bar__containerButtons {
     display: grid;
+    margin-top: 10px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     justify-items: center;
   }
   .filter-bar button {
-    font-size: 14px;
+    font-size: 0.9rem;
     width: 100%;
   }
   /*populaire-hebergements*/
@@ -484,6 +495,9 @@ footer article {
     box-sizing: border-box;
   }
   /*responsive populaires*/
+  .populaires {
+    margin-top: 0;
+  }
   .populaires-cards {
     display: block;
   }
