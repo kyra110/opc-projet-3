@@ -470,6 +470,9 @@ footer article {
     display: block;
     width: 15%;
   }
+  .fa-magnifying-glass {
+    color: white;
+  }
   .info-group__form__icon-gps {
     width: 15%;
   }
