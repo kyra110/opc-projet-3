@@ -2,6 +2,7 @@
 * {
   font-family: "Raleway", sans-serif;
   margin: 0;
+  list-style: none;
 }
 body {
   display: flex;
@@ -33,6 +34,11 @@ header {
 .header__menu {
   height: 100%;
   display: flex;
+}
+ul {
+  display: flex;
+  padding-top: 10px;
+  border-top: 2px solid transparent;
 }
 .header__menu__link {
   margin-left: 25px;
@@ -352,7 +358,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--main-bg-color);
 }
-footer article {
+footer nav {
   display: flex;
   padding: 25px;
   gap: 10px;
@@ -434,20 +440,29 @@ footer article {
   }
   .header__menu {
     width: 100%;
+  }
+  ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  li {
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 15px;
+  }
+  li:hover {
+    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
   }
   .header__menu__link {
     margin: 0;
     border-top: none;
-    border-bottom: 2px solid #d9d9d9;
-    padding-bottom: 15px;
   }
   .header__menu__link:hover {
-    color: var(--main-color);
     border-top: none;
-    border-bottom: 2px solid var(--main-color);
   }
   /*info-group*/
   .info-group {
